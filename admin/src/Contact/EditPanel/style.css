@@ -1,0 +1,60 @@
+.edit-panel{
+    padding:3em 5em;
+    background-color: rgba(36, 103, 103, 0.734);
+    position: fixed;
+    bottom: -20em;
+    left: -2em;
+    border-top-right-radius: 2em;
+    rotate: 1.5deg;
+    transition: 2s;
+}
+.edit-panel.onEdit{
+    bottom: -1.4em;
+    left: -2em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.input{
+    height: 2rem;
+    width: 10rem;
+    background: rgba(169, 60, 60, 0.745);
+    border-radius: 0.6em;
+    margin-top: 1em;
+    font-family: "DynaPuff";
+    color:black;
+}
+.input__image-id{
+    width: 14em;
+    rotate: -4deg;
+}
+.input__title{
+    margin-left: 2em;
+    rotate: -1deg;
+    background: rgba(179, 63, 179, 0.371);
+    width: 12rem;
+    height: 2.7rem;
+}
+.input__content{
+    width: 18rem;
+    height: 3rem;
+    outline: rgba(46, 43, 43, 0.615) double 3px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 1em;
+    padding: 1rem;
+    background: none;
+    border: none;
+    text-decoration: none;
+    resize: none;
+    rotate: 1deg;
+    background-color: rgba(210, 146, 61, 0.705);
+    margin-left: 3em;
+}
+.input__content::-webkit-scrollbar {
+    display: none;
+}
+.input__link{
+    margin-left: 2em;
+    width: 13em;
+    rotate: -2deg;
+    background: rgb(75, 159, 122);
+}

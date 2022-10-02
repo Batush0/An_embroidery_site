@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body{
+  background-color:rgb(255 99 71 / 0.6);
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  width: 95vw;
+  margin-left: 2.5vw;
+  height: 95vh;
+  margin-top: 2.5vh;
+  border: 4px double red;
+  padding-top: 30vh;
+  display: flex;
+  max-height: 65vh;
+}
+
+.menu-card{
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+  background-position:center;
+  box-shadow:-8px 1px rgb(0 0 0 / 0.5);
+  margin-left: 13vw;
+}
+.shadow{
+  margin: 0;
+  position:absolute;
+  background: rgb(0 0 0 / 0.8);
+  transform: translateY(-6em);
+  opacity: 0;
+  transition: 1s;
+  box-shadow: none;
+}
+.menu-card:hover .shadow{
+  transform: translateY(0);
+  opacity: 1;
+}
+.title-box{
+  margin-top: 10em;
+  margin-right: 1em;
+  /* position: absolute; */
+  float: right;
+  transition: 3s;
+}
+.title{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 300;
+  font-size: 2em;
+  color:azure;
+  text-shadow: 0px 0px rgb(0 0 0 / 1);
+  user-select: none;
+  transition: 1.4s;
+}
+.menu-card:hover .header {
+  opacity: 0;
+}
+.travel{
+  cursor: pointer;
+  text-decoration: none;
+}
+.travel-box{
+  margin-top: 11.4em;
+}
+.header{
+  margin-top: -3rem;
+}
+
+
+

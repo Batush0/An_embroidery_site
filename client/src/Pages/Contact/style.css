@@ -1,0 +1,66 @@
+    
+body{
+    background: none;
+}
+
+    #container{
+    background: none;
+    position: absolute;
+    padding-top: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#contact-b{
+    margin-bottom: 8em;
+    width: 80vw;
+    height: 15em;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 4px 2px rgba(122, 108, 108, 0.39);
+}
+
+#contact-img{
+    width: 14em;
+    height: 14em;
+    margin-bottom: -1.5em;
+    margin-left: 1em;
+}
+#contact-content{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+#contact-header{
+    position: absolute;
+    top:-1.5rem;
+    padding-left: 0.7em;
+    font-family: 'Oswald', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+#contact-parag{
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-top: 3.5rem;
+    overflow: scroll;
+    position: relative;
+    height:8rem;
+    font-family: 'EB Garamond', serif;
+}
+#contact-parag::-webkit-scrollbar {
+    display: none;
+  }
+
+#contact-link{
+    position: absolute;
+    right: 3rem;
+    top:0;
+    cursor: pointer;
+    user-select: none;
+}

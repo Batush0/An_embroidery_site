@@ -1,0 +1,32 @@
+#popUp{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: -6vh;
+    align-items:center;
+    display: flex;
+    justify-content:center;
+    transition: 2s;
+    opacity: 1;
+}
+#popUpContent{
+    width: fit-content;
+    height: 1.7rem;
+    background-color: rgba(192, 47, 47, 0.61);
+    align-items:center;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+.popUpScript{
+    margin: 0;
+    font-family: 'Aboreto', cursive;
+    font-size: 1.7em;
+    font-weight: 900;
+    user-select: none;
+}
+
+#popUp.onAction{
+    transform: translateY(8vh);
+}

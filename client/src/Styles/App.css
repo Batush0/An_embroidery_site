@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.55rem;
+}
+
+body::-webkit-scrollbar-track{
+    background:black ;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+main{
+    margin-left:5rem;
+    padding: 1rem;
+}
+
+
+:root{
+    --bg-primary: #121212;
+    --bg-secondary:#2D2D2D;
+    --bg-th:#9F9F9F;
+    --text-primary:#FFF;
+}
+

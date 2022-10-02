@@ -1,0 +1,219 @@
+.main{
+    padding-top:10vh ;
+    padding-left: 7vw;
+    display: flex;
+}
+
+#product{
+    background-color: rgba(192, 230, 241, 0.555);
+    transform: scale(0.4);
+    border-radius: 2rem;
+    position: absolute;
+    margin-top: -17em;
+    margin-left: 28rem;
+    transition: 2s;
+}
+
+#product.hasAbout{
+    margin-top: -29rem;
+}
+
+
+#card{
+    transform: scale(1.4);
+    position: absolute;
+    background-color:rgba(192, 230, 241, 0.555);
+    border-radius: 0.7rem;
+    margin: 14rem;
+    transition: 2s;
+    opacity: 1;
+}
+
+#card:hover{
+    background-color:rgba(192, 230, 241, 0.836);
+    scale: 1.06;
+}
+
+#product:hover{
+    background-color:rgba(192, 230, 241, 0.836);
+    scale: 1.06;
+}
+/* #card.clicked{
+    z-index: 99;
+    scale: 1.4;
+    margin-left: 40em;
+} */
+
+
+
+
+
+/* #card.clicked ~ #product{
+    opacity: 0;
+} */
+
+#product.clicked ~ #card{
+    opacity: 0;
+}
+
+
+
+
+
+
+#product.clicked{
+    z-index: 99;
+    scale: 1.4;
+    margin-left: 7em;
+    margin-top: -13em;
+}
+#product.hasImage #product.clicked{
+    margin-top: 10em;
+}
+
+#input-column{
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(165, 42, 42, 0.941);
+    padding: 3em;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 2em;
+    margin-left: -23.4em;
+    /* transition: 1500ms; */
+    z-index: 999;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+#input-column__after{
+    padding: 1em;
+    padding-left: 0.4em;
+    top:2em;
+    left: 0;
+    background-color:rgba(165, 42, 42, 0.941);
+    position: absolute;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 1em;
+    border:1px solid black;
+    border-left: none;
+    border-top: none;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 1.2em;
+    user-select: none;
+    /* transition: 1500ms; */
+}
+#input-column__after.clicked{
+    margin-left: 17.49em;
+}
+#input-column.clicked{
+    margin-left:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.input-header{
+    font-family: 'Pacifico';
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    user-select: none;
+}
+.input{
+    height: 2em;
+    width: 10em;
+    background: rgb(207, 156, 156);
+    border-radius: 05em;
+    margin-top: 1em;
+    font-family: "DynaPuff";
+}
+.straight-line{
+    display: block;
+    height: 0;
+    padding: 0;
+    width: 100%;
+    /* border-top: 1px solid #111111;  */
+    border-bottom: 1px solid rgb(41 41 41 /0.1); 
+    margin-top: 2rem;
+}
+
+#input-checkbox-box{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1.5em;
+    margin-top: 1rem;
+}
+.label-checkbox{
+    font-family: "DynaPuff";
+    margin-left: 1rem;
+    text-shadow: 1px 1px gray;
+    user-select: none;
+}
+.input-check{
+    width: 1.2em;
+    height: 1em;
+    background-color: white;
+    border-radius: 0.7em;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 2em;
+}
+.input-check:checked {
+    background-color: rgba(28, 30, 119, 0.5);
+    border: 2px dotted blueviolet;
+    box-shadow: 1px 0px black;
+}
+.input-dimension{
+    margin-left: 0.58em;
+}
+.input-gonna-detail{
+    width: 2em;
+    height: 1em;
+    margin: 0;
+}
+#label-gonna-detail{
+    margin-left: 0.5em;
+    user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+#input-detail{
+    width: 15rem;
+    height: 8rem;
+    outline: rgba(46, 43, 43, 0.615) double 3px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 1em;
+    padding: 1rem;
+    background: none;
+    border: none;
+    margin-top: 2rem;
+    text-decoration: none;
+    resize: none;
+}
+
+#procces-buttons{
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.procces-button{
+    padding: 1.5em 3em;
+    border-radius: 2em;
+    background: linear-gradient(to right bottom , rgb(228, 122, 36) 30%, black);
+    font-weight: 700;
+    text-shadow: 0px 1px gray;
+    user-select: none;
+    transition: 1s;
+    margin-right: 1em;
+}
+.procces-button:hover{
+    transform: scale(1.06);
+    background: linear-gradient(to right bottom , rgb(228, 122, 36) 50%, black);
+}
